@@ -37,6 +37,10 @@ sudo yum install dmidecode -y
 cat /sys/devices/virtual/dmi/id/product_uuid
 echo "------------ CURL -------------------------"
 curl http://169.254.169.254/latest/dynamic/instance-identity/
+wget http://169.254.169.254/latest/dynamic/instance-identity/
+echo "sleeping..."
+sleep 600
+echo "Still here"
 
 
 
